@@ -10,12 +10,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <nav class="navbar fixed navbar-light bg-light">
+                <nav class="navbar sticky-top navbar-light bg-light col-12">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
                             <i class="fab fa-instagram"></i>
@@ -42,26 +43,70 @@
                         </div>
                     </div>
                 </nav>
-    
-            <div class="col-12 d-flex justify-content-center">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-th"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
-                  </ul>
             </div>
-    
-    
-                <!-- Modal -->
+        </div>
+<!--body-->
+        <div class="container">
+            <div class="row">
+                <!--iconos-->
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="mosaico-tab" data-bs-toggle="tab" data-bs-target="#mosaico" type="button"
+                            role="tab" aria-controls="mosaico" aria-selected="true"><i class="fas fa-bars"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cascada-tab" data-bs-toggle="tab" data-bs-target="#cascada" type="button"
+                            role="tab" aria-controls="cascada" aria-selected="false"><i class="fas fa-th"></i></button>
+                    </li>
+                </ul>
+                <!--contenido-->
+                <div class="tab-content" id="myTabContent">
+                    <!--mosaico-->
+                    <div class="tab-pane fade show active" id="mosaico" role="tabpanel" aria-labelledby="mosaico-tab">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                        <img class="col-md-3 m-1" src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2" alt="">
+                    </div>
+                    <!--cascada-->
+                    <div class="tab-pane fade col-md-7" id="cascada" role="tabpanel" aria-labelledby="cascada-tab">
+                        <div class="post">
+                            <div class="card-title d-flex justify-content-space ">
+                                <div class="card">
+                                    <div class="card-header">
+                                      Featured
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://cdn11.bigcommerce.com/s-vak6ug5w2j/products/9730/images/9998/Albert_Bierstadt_-_Mountain_Landscape_1895_12x20_ybj6ag__10290.1507578410.500.750.jpg?c=2"card-title">
+                                        <h5 class="card-title">23 Likes</h5>
+                                        <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes, I'm learning to code whit #Breathethecode</p>
+                                    <div class="footer d-flex ">
+                                        <i class="far fa-heart m-2"></i>
+                                        <p>comment...</p>
+                                    </div>
+                            </div>
+                            <div class="card-image"></div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div>
+                                <textarea class="m-2" cols="65" rows="4"></textarea>
                             </div>
                             <div class="modal-body">
                                 <button><i class="fas fa-camera"></i></button>
@@ -77,8 +122,8 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                     crossorigin="anonymous"></script>
-            </div>
-        </div>
+
+
     </body>
     
     </html>
